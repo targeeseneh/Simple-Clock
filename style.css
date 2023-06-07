@@ -1,0 +1,53 @@
+.contianer{
+    font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #f1f1f1;
+      background-image: url('img4.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-size: xx-large;
+      align-items: center;
+}
+
+.clock {
+    font-size: 2em;
+    color: white;
+    background-color: #ffffff02;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: flex-end;
+    height: 1000%;
+
+}
+.clock {
+    /* ... */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.clock span {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.clock #seconds {
+    animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.clock {
+    /* ... */
+    font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 768px) {
+    .container {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+}
